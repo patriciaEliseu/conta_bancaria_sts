@@ -95,5 +95,5 @@ Este repositório é parte de um projeto educacional, mas contribuições são s
 
 ##  Contato
 
-Desenvolvido por [**Rafael**](https://github.com/conteudoGeneration)
+Desenvolvido por [**Patrícia**](https://github.com/patriciaEliseu/conta_bancaria_sts)
 Para dúvidas, sugestões ou colaborações, entre em contato via GitHub ou abra uma issue!
