@@ -107,16 +107,22 @@ public class Menu {
 			case 6:
 				System.out.println(Cores.TEXT_WHITE + "Saque\n\n");
 
+				sacar();
+				
 				keyPress();
 				break;
 			case 7:
 				System.out.println(Cores.TEXT_WHITE + "Depósito\n\n");
-
+				
+				depositar();
+				
 				keyPress();
 				break;
 			case 8:
 				System.out.println(Cores.TEXT_WHITE + "Transferência entre Contas\n\n");
 
+				transferir();
+				
 				keyPress();
 				break;
 			default:
@@ -333,21 +339,31 @@ public class Menu {
 			System.out.printf("\nA conta número %d não foi encontrada!", numero);
 		}
 		
+				
+	}
+	
+	private static void sacar () {
+		System.out.print("Digite o número da conta: ");
+		int numeroSacar = leia.nextInt();
+			
+		System.out.print("Digite o valor de saque: ");
+		float valorSacar = leia.nextFloat();
+			
+		contaController.sacar(numeroSacar, valorSacar);
+		};
 		
 		
+	private static void depositar() {
 		
+		System.out.print("Digite o numero da conta: ");
+		int numero = leia.nextInt();
 		
+		System.out.println("Digite o valor do depósito: ");
+		float valor = leia.nextFloat();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		contaController.depositar(numero, valor);
 		
 	}
+		
+		
 }
