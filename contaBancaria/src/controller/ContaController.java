@@ -3,6 +3,7 @@ package controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import conta.bancaria.model.Conta;
 import repository.ContaRepository;
@@ -110,6 +111,23 @@ public class ContaController implements ContaRepository{
 			System.out.println("\nA conta de Origem e /ou Destino não foram encontradas! ");
 		}
 		
+		
+	}
+		
+	@Override
+	public void listarPorTitular(String titular) {
+		
+		List<Conta> listaTitulares = listaContas.stream()
+				.filter(c -> c.getTitular().toUpperCase().contains(titular.toUpperCase()))
+				.collect(Collectors.toList());
+		
+		if(listaTitulares.isEmpty()) {
+			System.out.printf("\nNenhuma conta foi encontrada para titulares que possuam o nome: %s", titular);
+		}
+		
+		for(var conta : listaTitulares) {
+			conta.visualizar();
+		}
 		
 	}
 
