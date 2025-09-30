@@ -64,7 +64,7 @@ public class Menu {
 
 			// Se a opção for 0, o sistema será finalizado (System.exit(0))
 			if (opcao == 0) {
-				System.out.println(Cores.TEXT_WHITE_BOLD + "\nBanco do Brazil com Z - O seu Futuro começa aqui!");
+				System.out.println(Cores.TEXT_BLACK_BOLD + "\nBanco do Brazil com Z - O seu Futuro começa aqui!");
 				sobre();
 				leia.close();
 				System.exit(0);
@@ -74,63 +74,63 @@ public class Menu {
 			// correspondente
 			switch (opcao) {
 			case 1:
-				System.out.println(Cores.TEXT_WHITE + "Criar Conta\n\n");
+				System.out.println(Cores.TEXT_BLACK + "Criar Conta\n\n");
 
 				cadastrarConta();
 
 				keyPress();
 				break;
 			case 2:
-				System.out.println(Cores.TEXT_WHITE + "Listar todas as Contas\n\n");
+				System.out.println(Cores.TEXT_BLACK + "Listar todas as Contas\n\n");
 
 				listarContas();
 
 				keyPress();
 				break;
 			case 3:
-				System.out.println(Cores.TEXT_WHITE + "Consultar dados da Conta - por número\n\n");
+				System.out.println(Cores.TEXT_BLACK + "Consultar dados da Conta - por número\n\n");
 
 				procurarContaPorNumero();
 
 				keyPress();
 				break;
 			case 4:
-				System.out.println(Cores.TEXT_WHITE + "Atualizar dados da Conta\n\n");
+				System.out.println(Cores.TEXT_BLACK + "Atualizar dados da Conta\n\n");
 
 				atualizarConta();
 
 				keyPress();
 				break;
 			case 5:
-				System.out.println(Cores.TEXT_WHITE + "Apagar a Conta\n\n");
+				System.out.println(Cores.TEXT_BLACK + "Apagar a Conta\n\n");
 
 				deletarConta();
 
 				keyPress();
 				break;
 			case 6:
-				System.out.println(Cores.TEXT_WHITE + "Saque\n\n");
+				System.out.println(Cores.TEXT_BLACK + "Saque\n\n");
 
 				sacar();
 
 				keyPress();
 				break;
 			case 7:
-				System.out.println(Cores.TEXT_WHITE + "Depósito\n\n");
+				System.out.println(Cores.TEXT_BLACK + "Depósito\n\n");
 
 				depositar();
 
 				keyPress();
 				break;
 			case 8:
-				System.out.println(Cores.TEXT_WHITE + "Transferência entre Contas\n\n");
+				System.out.println(Cores.TEXT_BLACK + "Transferência entre Contas\n\n");
 
 				transferir();
 
 				keyPress();
 				break;
 			case 9:
-				System.out.println(Cores.TEXT_WHITE + "Procurar pelo Titular da Contas\n\n");
+				System.out.println(Cores.TEXT_BLACK + "Procurar pelo Titular da Contas\n\n");
 
 				listarPorTitular();
 
